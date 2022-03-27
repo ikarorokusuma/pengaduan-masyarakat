@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Aplikasi Pengaduan Masyarakat</title>
 	<link rel="shortcut icon" href="https://cepatpilih.com/image/logo.png">
@@ -17,24 +18,24 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
 
 </head>
-<body style="background: url(img/bg.jpg); background-size: cover;">
+
+<body">
 
 	<div class="container">
-		
 
-	<?php 
+
+		<?php
 		include 'conn/koneksi.php';
-		if(@$_GET['p']==""){
+		if (@$_GET['p'] == "") {
 			include_once 'login.php';
-		}
-		elseif(@$_GET['p']=="login"){
+		} elseif (@$_GET['p'] == "login") {
 			include_once 'login.php';
-		}
-		elseif(@$_GET['p']=="logout"){
+		} elseif (@$_GET['p'] == "logout") {
 			include_once 'logout.php';
 		}
-	 ?>
+		?>
 
 	</div>
-</body>
+	</body>
+
 </html>
